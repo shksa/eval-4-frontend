@@ -1,11 +1,10 @@
 import React from 'react';
 import './Header.css';
 
-function Header(props) {
+function Header() {
   return (
     <div className="header">
       <h2 className="headerLeftText">Quizzy</h2>
-      <h4 className="headerRightText" />
     </div>
   );
 }

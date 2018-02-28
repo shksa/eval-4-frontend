@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import React from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 import Header from './components/Header';
 import Login from './components/Login';
@@ -7,10 +8,6 @@ import Questions from './components/Questions';
 import LeaderBoard from './components/Lederboard';
 
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   render() {
     let page = null;
     if (this.props.view === 0) {
@@ -36,4 +33,8 @@ function mapPropsToState(state) {
 }
 
 export default connect(mapPropsToState, null)(App);
+
+App.propTypes = {
+  view: PropTypes.number.isRequired,
+};
 

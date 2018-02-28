@@ -120,3 +120,7 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(mapStateToProps, mapDispatchToProps)(Questions);
 
+Questions.propTypes = {
+  userDetails: PropTypes.object,
+  dispatchSetUserScore: PropTypes.func,
+};

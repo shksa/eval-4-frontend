@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import PropTyes from 'prop-types';
 import './QuestionBox.css';
 
 class QuestionBox extends React.Component {
@@ -20,7 +20,7 @@ class QuestionBox extends React.Component {
       },
     )
       .then(res => res.json())
-      .then((json) => {
+      .then(() => {
         this.props.updateUserResponses(newUserResponse);
       });
   }
@@ -66,4 +66,11 @@ class QuestionBox extends React.Component {
 }
 
 export default QuestionBox;
+
+QuestionBox.propTypes = {
+  qObj: PropTyes.object,
+  userName: PropTyes.string,
+  userResponses: PropTyes.object,
+  updateUserResponses: PropTyes.func,
+};
 
