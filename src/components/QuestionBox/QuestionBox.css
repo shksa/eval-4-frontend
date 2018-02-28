@@ -14,7 +14,7 @@
 .questionContent {
     font-size: 20px;
     text-align: center;
-    background-color: lightblue;
+    background-color: rgb(16, 166, 212);
     border-top: 3px solid black;
     padding: 20px;
 }
@@ -27,6 +27,7 @@
     /* background-color: green; */
     display: flex;
     align-items: center;
+    font-size: 20px;
 }
 .radioButton {
     height: 25px;
