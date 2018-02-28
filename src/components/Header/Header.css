@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    height: 80px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.headerLeftText {
+    margin-left: 40px;
+}
+.headerRightText {
+    margin-right: 40px;
+}
